@@ -60,81 +60,127 @@
   <main id="top">
 
     <!-- Hero -->
-    <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
-      <div class="max-w-3xl">
-        <p class="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-300 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-800 dark:border-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
-          <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
-          Available part-time &middot; Open to full-time
-        </p>
-        <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-6xl">
-          A virtual assistant who can also <span class="text-brand-600">build and fix things</span>.
-        </h1>
-        <p class="mt-6 text-lg leading-relaxed">
-          I'm Edi, a software engineer with 7+ years of experience in Ruby on Rails, React and Angular. I now help founders, agencies and small teams with
-          <strong>technical and web support</strong>, <strong>AI-automation workflows</strong> and <strong>day-to-day admin</strong>,
-          so you can spend your time on the work that matters.
-        </p>
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#contact" class="btn btn-primary">Work with me</a>
-          <a href="#services" class="btn btn-ghost">See what I do</a>
+    <section class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+        <div class="dot-grid absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]"></div>
+        <div class="absolute -left-24 -top-24 h-96 w-96 animate-blob rounded-full bg-brand-500/30 blur-3xl"></div>
+        <div class="absolute right-0 top-20 h-96 w-96 animate-blob rounded-full bg-fuchsia-500/25 blur-3xl [animation-delay:-5s]"></div>
+        <div class="absolute bottom-0 left-1/3 h-72 w-72 animate-blob rounded-full bg-cyan-400/20 blur-3xl [animation-delay:-9s]"></div>
+      </div>
+
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-[1.15fr_.85fr]">
+        <div>
+          <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-300/70 bg-emerald-50/80 px-3 py-1 text-xs font-semibold text-emerald-800 backdrop-blur dark:border-emerald-800 dark:bg-emerald-950/70 dark:text-emerald-300">
+            <span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span></span>
+            Available part-time &middot; Open to full-time
+          </p>
+          <h1 class="text-4xl font-extrabold leading-[1.05] tracking-tight text-slate-900 dark:text-white sm:text-6xl">
+            A virtual assistant who can also <span class="gradient-text">build and fix things.</span>
+          </h1>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed">
+            I'm Edi, a software engineer with 7+ years of experience in Ruby on Rails, React and Angular. I help founders, agencies and small teams with
+            <strong class="text-slate-900 dark:text-white">technical and web support</strong>,
+            <strong class="text-slate-900 dark:text-white">AI-automation workflows</strong> and
+            <strong class="text-slate-900 dark:text-white">day-to-day admin</strong>, so you can focus on the work that matters.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="btn btn-primary">Work with me
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6"/></svg>
+            </a>
+            <a href="#services" class="btn btn-ghost">See what I do</a>
+          </div>
+          <dl class="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-slate-200 pt-6 dark:border-slate-800">
+            <div><dt class="text-xs uppercase tracking-wide text-slate-500">Experience</dt><dd class="gradient-text text-3xl font-extrabold">7+ yrs</dd></div>
+            <div><dt class="text-xs uppercase tracking-wide text-slate-500">Based in</dt><dd class="gradient-text text-3xl font-extrabold">PH</dd></div>
+            <div><dt class="text-xs uppercase tracking-wide text-slate-500">Language</dt><dd class="gradient-text text-3xl font-extrabold">EN</dd></div>
+          </dl>
         </div>
-        <dl class="mt-12 grid max-w-xl grid-cols-3 gap-6">
-          <div><dt class="text-xs uppercase tracking-wide text-slate-500">Experience</dt><dd class="text-2xl font-bold text-slate-900 dark:text-white">7+ yrs</dd></div>
-          <div><dt class="text-xs uppercase tracking-wide text-slate-500">Based in</dt><dd class="text-2xl font-bold text-slate-900 dark:text-white">PH</dd></div>
-          <div><dt class="text-xs uppercase tracking-wide text-slate-500">Language</dt><dd class="text-2xl font-bold text-slate-900 dark:text-white">English</dd></div>
-        </dl>
+
+        <!-- Hero visual: illustrative task board -->
+        <div class="relative mx-auto w-full max-w-md" aria-hidden="true">
+          <div class="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-brand-500/30 via-violet-500/20 to-fuchsia-500/30 blur-2xl"></div>
+          <div class="relative animate-float-slow overflow-hidden rounded-2xl border border-slate-200 bg-white/90 shadow-2xl shadow-brand-600/20 backdrop-blur dark:border-slate-700 dark:bg-slate-900/90">
+            <div class="flex items-center gap-2 border-b border-slate-200 px-4 py-3 dark:border-slate-800">
+              <span class="h-3 w-3 rounded-full bg-rose-400"></span><span class="h-3 w-3 rounded-full bg-amber-400"></span><span class="h-3 w-3 rounded-full bg-emerald-400"></span>
+              <span class="ml-3 text-xs font-medium text-slate-500">today.md</span>
+            </div>
+            <ul class="space-y-3 p-5 text-sm">
+              <li class="flex items-center gap-3 rounded-xl bg-brand-50 p-3 dark:bg-slate-800"><span class="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white">&lt;/&gt;</span><span class="font-medium text-slate-800 dark:text-slate-100">Fix checkout bug</span><span class="ml-auto text-emerald-600">&#10003;</span></li>
+              <li class="flex items-center gap-3 rounded-xl bg-violet-50 p-3 dark:bg-slate-800"><span class="flex h-8 w-8 items-center justify-center rounded-lg bg-violet-600 text-white">&#9889;</span><span class="font-medium text-slate-800 dark:text-slate-100">Automate weekly report</span><span class="ml-auto text-emerald-600">&#10003;</span></li>
+              <li class="flex items-center gap-3 rounded-xl bg-emerald-50 p-3 dark:bg-slate-800"><span class="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white">&#9993;</span><span class="font-medium text-slate-800 dark:text-slate-100">Clear inbox &amp; schedule</span><span class="ml-auto text-emerald-600">&#10003;</span></li>
+              <li class="flex items-center gap-3 rounded-xl border border-dashed border-slate-300 p-3 dark:border-slate-700"><span class="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-200 text-slate-500 dark:bg-slate-700">+</span><span class="text-slate-500">Your next task here</span></li>
+            </ul>
+          </div>
+          <div class="absolute -right-3 -top-5 animate-float rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-brand-700 shadow-lg dark:border-slate-700 dark:bg-slate-800 dark:text-brand-200 sm:-right-6">Rails &middot; React</div>
+          <div class="absolute -bottom-5 -left-3 animate-float rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-violet-700 shadow-lg [animation-delay:-3s] dark:border-slate-700 dark:bg-slate-800 dark:text-violet-300 sm:-left-6">AI workflows</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools marquee -->
+    <section class="border-y border-slate-200 bg-white/70 py-5 backdrop-blur dark:border-slate-800 dark:bg-slate-900/50" aria-label="Tools and technologies">
+      <div class="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <div class="flex w-max animate-marquee gap-10 whitespace-nowrap text-sm font-semibold items-center text-slate-500 dark:text-slate-400">
+          <span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/rails.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>Ruby on Rails</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/react.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>React</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/angular.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>Angular</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/typescript.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>TypeScript</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/tailwind.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>TailwindCSS</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/postgresql.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>PostgreSQL</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/mysql.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>MySQL</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/redis.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>Redis</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/github.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>GitHub</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/circleci.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>CircleCI</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/aws.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>AWS</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/claude.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>Claude Code</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/postman.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>Postman</span><span class="inline-flex items-center gap-2.5"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/vscode.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>VS Code</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/rails.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>Ruby on Rails</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/react.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>React</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/angular.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>Angular</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/typescript.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>TypeScript</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/tailwind.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>TailwindCSS</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/postgresql.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>PostgreSQL</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/mysql.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>MySQL</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/redis.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>Redis</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/github.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>GitHub</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/circleci.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>CircleCI</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/aws.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>AWS</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/claude.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>Claude Code</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/postman.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>Postman</span><span class="inline-flex items-center gap-2.5" aria-hidden="true"><span class="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"><img src="assets/logos/vscode.svg" alt="" class="h-full w-full object-contain" width="24" height="24"></span>VS Code</span>
+        </div>
       </div>
     </section>
 
     <!-- Services -->
-    <section id="services" class="border-y border-slate-200 bg-white py-16 dark:border-slate-800 dark:bg-slate-900/40 sm:py-20">
+    <section id="services" class="py-20 sm:py-28">
       <div class="mx-auto max-w-6xl px-4 sm:px-6">
-        <h2 class="section-title text-slate-900 dark:text-white">How I can help</h2>
-        <p class="mt-3 max-w-2xl">Three areas, one person. Start with one and add the others when you need them.</p>
+        <div class="reveal max-w-2xl">
+          <span class="eyebrow">Services</span>
+          <h2 class="section-title">How I can help</h2>
+          <p class="mt-3">Three areas, one person. Start with one and add the others when you need them.</p>
+        </div>
 
-        <div class="mt-10 grid gap-6 lg:grid-cols-3">
-          <article class="card">
-            <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-600 dark:bg-slate-800">
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="card card-hover reveal relative overflow-hidden">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-500 to-cyan-400"></div>
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-cyan-500 text-white shadow-lg shadow-brand-500/30">
               <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 9l-4 3 4 3m8-6l4 3-4 3M14 5l-4 14"/></svg>
             </div>
-            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Technical &amp; Web VA</h3>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Technical &amp; Web VA</h3>
             <p class="mt-2 text-sm">Hands-on help to keep your website or web app healthy.</p>
-            <ul class="mt-4 space-y-2 text-sm">
-              <li>&#10003; Bug fixes and small feature work (Rails, React, Angular)</li>
-              <li>&#10003; Website updates and content changes</li>
-              <li>&#10003; QA, testing and issue triage</li>
-              <li>&#10003; Technical documentation and ticket cleanup</li>
-              <li>&#10003; API and integration troubleshooting</li>
+            <ul class="mt-5 space-y-2.5 text-sm">
+              <li class="flex gap-2"><span class="text-brand-500">&#10003;</span>Bug fixes and small feature work (Rails, React, Angular)</li>
+              <li class="flex gap-2"><span class="text-brand-500">&#10003;</span>Website updates and content changes</li>
+              <li class="flex gap-2"><span class="text-brand-500">&#10003;</span>QA, testing and issue triage</li>
+              <li class="flex gap-2"><span class="text-brand-500">&#10003;</span>Technical documentation and ticket cleanup</li>
+              <li class="flex gap-2"><span class="text-brand-500">&#10003;</span>API and integration troubleshooting</li>
             </ul>
           </article>
 
-          <article class="card">
-            <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-600 dark:bg-slate-800">
+          <article class="card card-hover reveal relative overflow-hidden [transition-delay:100ms]">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-violet-500 to-fuchsia-500"></div>
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white shadow-lg shadow-violet-500/30">
               <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
             </div>
-            <h3 class="text-lg font-bold text-slate-900 dark:text-white">AI-Automation VA</h3>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">AI-Automation VA</h3>
             <p class="mt-2 text-sm">Turn repetitive tasks into workflows that run on their own.</p>
-            <ul class="mt-4 space-y-2 text-sm">
-              <li>&#10003; AI-assisted drafting, summarising and research</li>
-              <li>&#10003; Workflow automation across your everyday tools</li>
-              <li>&#10003; Prompt and template setup for your team</li>
-              <li>&#10003; Data cleanup, reporting and spreadsheet automation</li>
-              <li>&#10003; AI-assisted code review and debugging</li>
+            <ul class="mt-5 space-y-2.5 text-sm">
+              <li class="flex gap-2"><span class="text-violet-500">&#10003;</span>AI-assisted drafting, summarising and research</li>
+              <li class="flex gap-2"><span class="text-violet-500">&#10003;</span>Workflow automation across your everyday tools</li>
+              <li class="flex gap-2"><span class="text-violet-500">&#10003;</span>Prompt and template setup for your team</li>
+              <li class="flex gap-2"><span class="text-violet-500">&#10003;</span>Data cleanup, reporting and spreadsheet automation</li>
+              <li class="flex gap-2"><span class="text-violet-500">&#10003;</span>AI-assisted code review and debugging</li>
             </ul>
           </article>
 
-          <article class="card">
-            <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-600 dark:bg-slate-800">
+          <article class="card card-hover reveal relative overflow-hidden [transition-delay:200ms]">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-emerald-500 to-teal-400"></div>
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 text-white shadow-lg shadow-emerald-500/30">
               <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3M5 11h14M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
             </div>
-            <h3 class="text-lg font-bold text-slate-900 dark:text-white">General Admin VA</h3>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">General Admin VA</h3>
             <p class="mt-2 text-sm">Reliable day-to-day support so nothing slips.</p>
-            <ul class="mt-4 space-y-2 text-sm">
-              <li>&#10003; Inbox and calendar management</li>
-              <li>&#10003; Scheduling, reminders and follow-ups</li>
-              <li>&#10003; Data entry and record keeping</li>
-              <li>&#10003; Research and document preparation</li>
-              <li>&#10003; Customer-support triage and replies</li>
+            <ul class="mt-5 space-y-2.5 text-sm">
+              <li class="flex gap-2"><span class="text-emerald-500">&#10003;</span>Inbox and calendar management</li>
+              <li class="flex gap-2"><span class="text-emerald-500">&#10003;</span>Scheduling, reminders and follow-ups</li>
+              <li class="flex gap-2"><span class="text-emerald-500">&#10003;</span>Data entry and record keeping</li>
+              <li class="flex gap-2"><span class="text-emerald-500">&#10003;</span>Research and document preparation</li>
+              <li class="flex gap-2"><span class="text-emerald-500">&#10003;</span>Customer-support triage and replies</li>
             </ul>
           </article>
         </div>
@@ -142,106 +188,228 @@
     </section>
 
     <!-- Work -->
-    <section id="work" class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-      <h2 class="section-title text-slate-900 dark:text-white">Experience behind the service</h2>
-      <p class="mt-3 max-w-2xl">Client details stay confidential. These are the kinds of problems I've solved in full-time engineering roles.</p>
+    <section id="work" class="border-y border-slate-200 bg-white/70 py-20 dark:border-slate-800 dark:bg-slate-900/40 sm:py-28">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="reveal max-w-2xl">
+          <span class="eyebrow">Experience</span>
+          <h2 class="section-title">The experience behind the service</h2>
+          <p class="mt-3">Client details stay confidential. These are the kinds of problems I've solved in full-time engineering roles.</p>
+        </div>
 
-      <div class="mt-10 grid gap-6 md:grid-cols-3">
-        <article class="card">
-          <p class="text-xs font-semibold uppercase tracking-wide text-brand-600">Education platform &middot; 2025&ndash;now</p>
-          <h3 class="mt-2 text-lg font-bold text-slate-900 dark:text-white">Student management platform</h3>
-          <p class="mt-2 text-sm">Worked across the stack of a multi-tenant platform used by education and training providers.</p>
-          <ul class="mt-4 list-disc space-y-1 pl-5 text-sm">
-            <li>Built data integrations to support compliance reporting</li>
-            <li>Resolved production issues such as database deadlocks and validation errors</li>
-            <li>Fixed defects causing data loss and duplicate records</li>
-          </ul>
-          <div class="mt-4 flex flex-wrap gap-2"><span class="chip">Rails</span><span class="chip">MySQL</span><span class="chip">Redis</span></div>
-        </article>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <article class="card card-hover reveal !bg-slate-50 dark:!bg-slate-900">
+            <p class="text-xs font-bold uppercase tracking-wide text-brand-600 dark:text-brand-400">Education platform &middot; 2025&ndash;now</p>
+            <h3 class="mt-2 text-lg font-bold text-slate-900 dark:text-white">Student management platform</h3>
+            <p class="mt-2 text-sm">Worked across the stack of a multi-tenant platform used by education and training providers.</p>
+            <ul class="mt-4 list-disc space-y-1.5 pl-5 text-sm marker:text-brand-500">
+              <li>Built data integrations to support compliance reporting</li>
+              <li>Resolved production issues such as database deadlocks and validation errors</li>
+              <li>Fixed defects causing data loss and duplicate records</li>
+            </ul>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="chip">Rails</span><span class="chip">MySQL</span><span class="chip">Redis</span></div>
+          </article>
 
-        <article class="card">
-          <p class="text-xs font-semibold uppercase tracking-wide text-brand-600">Property SaaS &middot; 2024&ndash;2025</p>
-          <h3 class="mt-2 text-lg font-bold text-slate-900 dark:text-white">Property management app</h3>
-          <p class="mt-2 text-sm">Maintained backend services and built dashboards for property managers, owners and tenants.</p>
-          <ul class="mt-4 list-disc space-y-1 pl-5 text-sm">
-            <li>Designed REST APIs behind key features</li>
-            <li>Built React and Tailwind dashboard features</li>
-            <li>Improved speed with query tuning, background jobs and caching</li>
-          </ul>
-          <div class="mt-4 flex flex-wrap gap-2"><span class="chip">Rails</span><span class="chip">React</span><span class="chip">TailwindCSS</span></div>
-        </article>
+          <article class="card card-hover reveal !bg-slate-50 [transition-delay:100ms] dark:!bg-slate-900">
+            <p class="text-xs font-bold uppercase tracking-wide text-violet-600 dark:text-violet-400">Property SaaS &middot; 2024&ndash;2025</p>
+            <h3 class="mt-2 text-lg font-bold text-slate-900 dark:text-white">Property management app</h3>
+            <p class="mt-2 text-sm">Maintained backend services and built dashboards for property managers, owners and tenants.</p>
+            <ul class="mt-4 list-disc space-y-1.5 pl-5 text-sm marker:text-violet-500">
+              <li>Designed REST APIs behind key features</li>
+              <li>Built React and Tailwind dashboard features</li>
+              <li>Improved speed with query tuning, background jobs and caching</li>
+            </ul>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="chip">Rails</span><span class="chip">React</span><span class="chip">TailwindCSS</span></div>
+          </article>
 
-        <article class="card">
-          <p class="text-xs font-semibold uppercase tracking-wide text-brand-600">Healthcare screening &middot; 2019&ndash;2024</p>
-          <h3 class="mt-2 text-lg font-bold text-slate-900 dark:text-white">Pre-employment screening system</h3>
-          <p class="mt-2 text-sm">Built a microservice-based system for medical pre-employment screening.</p>
-          <ul class="mt-4 list-disc space-y-1 pl-5 text-sm">
-            <li>Designed APIs for data exchange between services</li>
-            <li>Wrote RSpec tests and optimised PostgreSQL queries</li>
-            <li>Ran code reviews and mentored junior developers</li>
-          </ul>
-          <div class="mt-4 flex flex-wrap gap-2"><span class="chip">Rails</span><span class="chip">Angular</span><span class="chip">PostgreSQL</span></div>
-        </article>
-      </div>
+          <article class="card card-hover reveal !bg-slate-50 [transition-delay:200ms] dark:!bg-slate-900">
+            <p class="text-xs font-bold uppercase tracking-wide text-emerald-600 dark:text-emerald-400">Healthcare screening &middot; 2019&ndash;2024</p>
+            <h3 class="mt-2 text-lg font-bold text-slate-900 dark:text-white">Pre-employment screening system</h3>
+            <p class="mt-2 text-sm">Built a microservice-based system for medical pre-employment screening.</p>
+            <ul class="mt-4 list-disc space-y-1.5 pl-5 text-sm marker:text-emerald-500">
+              <li>Designed APIs for data exchange between services</li>
+              <li>Wrote RSpec tests and optimised PostgreSQL queries</li>
+              <li>Ran code reviews and mentored junior developers</li>
+            </ul>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="chip">Rails</span><span class="chip">Angular</span><span class="chip">PostgreSQL</span></div>
+          </article>
+        </div>
 
-      <!-- Skills -->
-      <div class="mt-12 grid gap-6 md:grid-cols-2">
-        <div class="card">
-          <h3 class="font-bold text-slate-900 dark:text-white">Technical toolkit</h3>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="chip">Ruby on Rails</span><span class="chip">React</span><span class="chip">Angular</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">HTML / CSS</span><span class="chip">TailwindCSS</span><span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">RSpec</span><span class="chip">Git / GitHub</span><span class="chip">CircleCI</span><span class="chip">AWS</span><span class="chip">Postman</span>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <div class="card reveal md:col-span-2">
+          <h3 class="font-bold text-slate-900 dark:text-white">Tools &amp; tech at a glance</h3>
+          <div class="mt-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div>
+              <h4 class="mb-3 text-xs font-bold uppercase tracking-widest text-slate-500">Backend</h4>
+              <ul class="flex flex-wrap gap-x-5 gap-y-4">
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/ruby.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">Ruby</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/rails.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">Ruby on Rails</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><span class="text-[11px] font-extrabold tracking-tight text-rose-600">RSpec</span></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">RSpec</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="mb-3 text-xs font-bold uppercase tracking-widest text-slate-500">Frontend</h4>
+              <ul class="flex flex-wrap gap-x-5 gap-y-4">
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/react.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">React</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/angular.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">Angular</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/typescript.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">TypeScript</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/javascript.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">JavaScript</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/html5.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">HTML5</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/css3.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">CSS3</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/tailwind.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">TailwindCSS</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="mb-3 text-xs font-bold uppercase tracking-widest text-slate-500">Databases</h4>
+              <ul class="flex flex-wrap gap-x-5 gap-y-4">
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/postgresql.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">PostgreSQL</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/mysql.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">MySQL</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/redis.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">Redis</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="mb-3 text-xs font-bold uppercase tracking-widest text-slate-500">DevOps & Tools</h4>
+              <ul class="flex flex-wrap gap-x-5 gap-y-4">
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/git.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">Git</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/github.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">GitHub</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/circleci.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">CircleCI</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/aws.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">AWS</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/codeclimate.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">Code Climate</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/postman.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">Postman</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/insomnia.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">Insomnia</span>
+                </li>
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/vscode.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">VS Code</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="mb-3 text-xs font-bold uppercase tracking-widest text-slate-500">AI</h4>
+              <ul class="flex flex-wrap gap-x-5 gap-y-4">
+                <li class="group flex flex-col items-center gap-2 text-center">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-sm ring-1 ring-slate-200 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-md dark:ring-slate-700"><img src="assets/logos/claude.svg" alt="" class="h-8 w-8 object-contain" loading="lazy" width="32" height="32"></span>
+                  <span class="text-xs font-medium text-slate-600 dark:text-slate-400">Claude / Claude Code</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <h3 class="font-bold text-slate-900 dark:text-white">Working style</h3>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="chip">Claude Code &amp; AI tools</span><span class="chip">Agile / Scrum</span><span class="chip">Code review</span><span class="chip">Documentation</span><span class="chip">Async communication</span><span class="chip">Stand-ups &amp; retros</span>
+          <div class="card reveal md:col-span-2">
+            <h3 class="font-bold text-slate-900 dark:text-white">Working style</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="chip">Claude Code &amp; AI tools</span><span class="chip">Agile / Scrum</span><span class="chip">Code review</span><span class="chip">Documentation</span><span class="chip">Async communication</span><span class="chip">Stand-ups &amp; retros</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Process -->
-    <section id="process" class="border-y border-slate-200 bg-white py-16 dark:border-slate-800 dark:bg-slate-900/40 sm:py-20">
+    <section id="process" class="py-20 sm:py-28">
       <div class="mx-auto max-w-6xl px-4 sm:px-6">
-        <h2 class="section-title text-slate-900 dark:text-white">How we'd work together</h2>
-        <ol class="mt-10 grid gap-6 md:grid-cols-4">
-          <li class="card"><span class="text-sm font-bold text-brand-600">01</span><h3 class="mt-2 font-bold text-slate-900 dark:text-white">Intro call</h3><p class="mt-2 text-sm">A short chat about your needs, tools and priorities.</p></li>
-          <li class="card"><span class="text-sm font-bold text-brand-600">02</span><h3 class="mt-2 font-bold text-slate-900 dark:text-white">Trial task</h3><p class="mt-2 text-sm">A small paid task so we both see if it's a fit.</p></li>
-          <li class="card"><span class="text-sm font-bold text-brand-600">03</span><h3 class="mt-2 font-bold text-slate-900 dark:text-white">Set up</h3><p class="mt-2 text-sm">Agree on hours, channels, access and reporting.</p></li>
-          <li class="card"><span class="text-sm font-bold text-brand-600">04</span><h3 class="mt-2 font-bold text-slate-900 dark:text-white">Ongoing support</h3><p class="mt-2 text-sm">Regular updates, clear documentation and no surprises.</p></li>
+        <div class="reveal max-w-2xl">
+          <span class="eyebrow">Process</span>
+          <h2 class="section-title">How we'd work together</h2>
+        </div>
+        <ol class="relative mt-12 grid gap-6 md:grid-cols-4">
+          <div class="absolute left-0 right-0 top-6 hidden h-px bg-gradient-to-r from-transparent via-brand-300 to-transparent md:block" aria-hidden="true"></div>
+          <li class="reveal relative"><span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-violet-600 text-sm font-bold text-white shadow-lg shadow-brand-500/30">1</span><h3 class="mt-4 font-bold text-slate-900 dark:text-white">Intro call</h3><p class="mt-2 text-sm">A short chat about your needs, tools and priorities.</p></li>
+          <li class="reveal relative [transition-delay:100ms]"><span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-violet-600 text-sm font-bold text-white shadow-lg shadow-brand-500/30">2</span><h3 class="mt-4 font-bold text-slate-900 dark:text-white">Trial task</h3><p class="mt-2 text-sm">A small paid task so we both see if it's a fit.</p></li>
+          <li class="reveal relative [transition-delay:200ms]"><span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-violet-600 text-sm font-bold text-white shadow-lg shadow-brand-500/30">3</span><h3 class="mt-4 font-bold text-slate-900 dark:text-white">Set up</h3><p class="mt-2 text-sm">Agree on hours, channels, access and reporting.</p></li>
+          <li class="reveal relative [transition-delay:300ms]"><span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-violet-600 text-sm font-bold text-white shadow-lg shadow-brand-500/30">4</span><h3 class="mt-4 font-bold text-slate-900 dark:text-white">Ongoing support</h3><p class="mt-2 text-sm">Regular updates, clear documentation and no surprises.</p></li>
         </ol>
       </div>
     </section>
 
     <!-- Availability -->
-    <section id="availability" class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-      <div class="grid gap-8 md:grid-cols-2">
-        <div>
-          <h2 class="section-title text-slate-900 dark:text-white">Availability</h2>
+    <section id="availability" class="border-t border-slate-200 bg-white/70 py-20 dark:border-slate-800 dark:bg-slate-900/40 sm:py-28">
+      <div class="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-2 md:items-center">
+        <div class="reveal">
+          <span class="eyebrow">Availability</span>
+          <h2 class="section-title">Part-time now, open to more</h2>
           <p class="mt-3">I'm starting with part-time engagements and I'm open to a full-time role for the right fit.</p>
         </div>
-        <div class="card">
-          <ul class="space-y-3 text-sm">
-            <li class="flex justify-between gap-4"><span class="font-semibold text-slate-900 dark:text-white">Current status</span><span>Part-time, taking on clients</span></li>
-            <li class="flex justify-between gap-4"><span class="font-semibold text-slate-900 dark:text-white">Full-time</span><span>Open to discuss</span></li>
-            <li class="flex justify-between gap-4"><span class="font-semibold text-slate-900 dark:text-white">Location</span><span>Philippines (PHT, UTC+8)</span></li>
-            <li class="flex justify-between gap-4"><span class="font-semibold text-slate-900 dark:text-white">Time-zone overlap</span><span>Flexible, ask me</span></li>
-            <li class="flex justify-between gap-4"><span class="font-semibold text-slate-900 dark:text-white">Language</span><span>English, Filipino</span></li>
+        <div class="card reveal">
+          <ul class="divide-y divide-slate-200 text-sm dark:divide-slate-800">
+            <li class="flex justify-between gap-4 py-3 first:pt-0"><span class="font-semibold text-slate-900 dark:text-white">Current status</span><span class="text-emerald-600 dark:text-emerald-400">Part-time, taking on clients</span></li>
+            <li class="flex justify-between gap-4 py-3"><span class="font-semibold text-slate-900 dark:text-white">Full-time</span><span>Open to discuss</span></li>
+            <li class="flex justify-between gap-4 py-3"><span class="font-semibold text-slate-900 dark:text-white">Location</span><span>Philippines (PHT, UTC+8)</span></li>
+            <li class="flex justify-between gap-4 py-3"><span class="font-semibold text-slate-900 dark:text-white">Time-zone overlap</span><span>Flexible, ask me</span></li>
+            <li class="flex justify-between gap-4 py-3 last:pb-0"><span class="font-semibold text-slate-900 dark:text-white">Language</span><span>English, Filipino</span></li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="px-4 pb-20 sm:px-6">
-      <div class="mx-auto max-w-4xl rounded-3xl bg-brand-600 px-6 py-12 text-center text-white sm:px-12">
-        <h2 class="text-3xl font-bold">Let's talk about what you need off your plate</h2>
-        <p class="mx-auto mt-3 max-w-xl text-brand-100">Tell me a bit about your business and the tasks you'd like to hand off. I usually reply within one working day.</p>
-        <div class="mt-8 flex flex-wrap justify-center gap-3">
-          <!-- TODO: replace with your real email address -->
-          <a href="mailto:your-email@example.com" class="btn bg-white text-brand-700 hover:bg-brand-50">Email me</a>
-          <a href="https://www.linkedin.com/in/edi-meer" target="_blank" rel="noopener noreferrer" class="btn border border-white/60 text-white hover:bg-white/10">LinkedIn</a>
+    <section id="contact" class="px-4 py-20 sm:px-6 sm:py-28">
+      <div class="reveal relative mx-auto max-w-4xl overflow-hidden rounded-3xl bg-gradient-to-br from-brand-600 via-violet-600 to-fuchsia-600 px-6 py-14 text-center text-white shadow-2xl shadow-brand-600/30 sm:px-12">
+        <div class="pointer-events-none absolute -left-10 -top-10 h-52 w-52 rounded-full bg-white/15 blur-2xl" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute -bottom-12 -right-10 h-60 w-60 rounded-full bg-cyan-300/20 blur-2xl" aria-hidden="true"></div>
+        <h2 class="relative text-3xl font-extrabold sm:text-4xl">Let's talk about what you need off your plate</h2>
+        <p class="relative mx-auto mt-3 max-w-xl text-brand-100">Tell me a bit about your business and the tasks you'd like to hand off. I usually reply within one working day.</p>
+        <div class="relative mt-8 flex flex-wrap justify-center gap-3">
+          <a href="mailto:edison.cmeer@gmail.com" class="btn bg-white text-brand-700 shadow-lg hover:-translate-y-0.5 hover:bg-brand-50">Email me</a>
+          <a href="https://www.linkedin.com/in/edi-meer" target="_blank" rel="noopener noreferrer" class="btn border border-white/60 text-white hover:-translate-y-0.5 hover:bg-white/10">LinkedIn</a>
         </div>
       </div>
     </section>

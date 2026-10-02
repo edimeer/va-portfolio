@@ -5,14 +5,22 @@
 html { scroll-behavior: smooth; }
 
 @layer components {
-  .btn { @apply inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2; }
-  .btn-primary { @apply bg-brand-600 text-white hover:bg-brand-700; }
-  .btn-ghost { @apply border border-slate-300 text-slate-800 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-100 dark:hover:bg-slate-800; }
-  .card { @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900; }
-  .chip { @apply inline-block rounded-full bg-brand-50 px-3 py-1 text-xs font-medium text-brand-700 dark:bg-slate-800 dark:text-brand-100; }
-  .section-title { @apply text-2xl font-bold tracking-tight sm:text-3xl; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950; }
+  .btn-primary { @apply bg-gradient-to-r from-brand-600 to-violet-600 text-white shadow-lg shadow-brand-600/30 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-600/40; }
+  .btn-ghost { @apply border border-slate-300 bg-white/60 text-slate-800 backdrop-blur hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-100 dark:hover:bg-slate-800; }
+  .card { @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 dark:border-slate-800 dark:bg-slate-900; }
+  .card-hover { @apply hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-900/10 dark:hover:border-slate-700 dark:hover:shadow-black/40; }
+  .chip { @apply inline-block rounded-full bg-brand-50 px-3 py-1 text-xs font-medium text-brand-700 ring-1 ring-inset ring-brand-100 dark:bg-slate-800 dark:text-brand-200 dark:ring-slate-700; }
+  .eyebrow { @apply mb-3 inline-block text-xs font-bold uppercase tracking-[0.2em] text-brand-600 dark:text-brand-400; }
+  .section-title { @apply text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl; }
+  .gradient-text { @apply bg-gradient-to-r from-brand-600 via-violet-500 to-fuchsia-500 bg-clip-text text-transparent; }
+  .dot-grid { background-image: radial-gradient(rgb(100 116 139 / 0.25) 1px, transparent 1px); background-size: 24px 24px; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.is-visible { opacity: 1; transform: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .animate-float, .animate-float-slow, .animate-marquee, .animate-blob { animation: none !important; }
 }

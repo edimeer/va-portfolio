@@ -7,8 +7,5 @@ Static portfolio site styled with Tailwind CSS. Deploys to GitHub Pages as-is.
 - Rebuild CSS after changing classes: `npm install && npm run build` (or `npm run dev` to watch)
 - The compiled `assets/styles.css` is committed, so GitHub Pages needs no build step.
 
-## Before publishing
-- Replace `your-email@example.com` in `index.html`.
-
 ## Deploy
 Push to GitHub, then Settings > Pages > Deploy from branch > `main` / root.
