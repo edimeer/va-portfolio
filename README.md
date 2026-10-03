@@ -6,13 +6,13 @@ Personal portfolio site for my virtual assistant services: general admin, AI aut
 
 ## About
 
-I'm a virtual assistant with a 7+ year background as a software engineer. This site shows what I offer, the tools I work with, and how to get in touch. I'm available part-time and open to full-time roles.
+I'm a virtual assistant with a 7+ year background as a software engineer. This site shows what I offer, the tools I work with, and how to get in touch. I'm available Monday to Friday, 4 to 6 hours a day.
 
 ## Features
 
 - Single-page, responsive layout (mobile to desktop)
 - Light and dark mode with a toggle that remembers your choice
-- Sections for services, example tasks, tools, background, process, availability and FAQ
+- Sections for about, services, example tasks, work samples, tools, process, background, availability and FAQ
 - Tool logos stored locally, with no third-party CDN for images
 - Scroll animations that respect `prefers-reduced-motion`
 - No frameworks or runtime JavaScript dependencies
