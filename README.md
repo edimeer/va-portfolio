@@ -28,11 +28,12 @@ I'm a virtual assistant with a 7+ year background as a software engineer. This s
 
 ```
 va-portfolio/
+├── .github/workflows/    # Deploy to GitHub Pages
 ├── index.html            # All page content
 ├── src/input.css         # Tailwind entry file and custom components
 ├── tailwind.config.js    # Theme, fonts, colours, animations
 ├── assets/
-│   ├── styles.css        # Compiled CSS (committed so Pages needs no build)
+│   ├── styles.css        # Compiled CSS (rebuilt by CI on deploy)
 │   ├── main.js           # Theme toggle, menu, scroll reveal
 │   └── logos/            # Tool logos (SVG)
 └── package.json
@@ -59,16 +60,17 @@ Then open http://localhost:8000.
 
 - **Content:** edit `index.html`.
 - **Styles:** use Tailwind classes in the HTML, or add shared components in `src/input.css`.
-- **After changing classes:** run `npm run build` to regenerate `assets/styles.css`, then commit it.
+- **After changing classes:** run `npm run build` (or keep `npm run dev` running) to see them locally. CI rebuilds the CSS on deploy.
 
 ## Deploy
 
-The site is served from the `main` branch root by GitHub Pages. Push to `main` and the site updates within a minute or two.
+A GitHub Actions workflow (`.github/workflows/deploy.yml`) builds the CSS and deploys to GitHub Pages on every push to `main`. The site updates within a minute or two; progress shows in the repo's **Actions** tab.
 
 ```bash
-npm run build
 git add -A && git commit -m "Update site" && git push
 ```
+
+One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
 
 ## Credits
 
