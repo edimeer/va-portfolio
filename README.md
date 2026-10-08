@@ -74,7 +74,7 @@ One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub
 
 ## Credits
 
-Tool and brand logos belong to their respective owners and are shown only to indicate the tools I work with. Logo sources: [Devicon](https://devicon.dev/) and [Simple Icons](https://simpleicons.org/).
+Tool and brand logos belong to their respective owners and are shown only to indicate the tools I work with. Logo sources: [Devicon](https://devicon.dev/), [Simple Icons](https://simpleicons.org/) and [selfh.st/icons](https://selfh.st/icons/) (Microsoft Copilot).
 
 ## License
 
