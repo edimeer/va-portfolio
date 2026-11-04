@@ -74,7 +74,7 @@ One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub
 
 ## Credits
 
-Tool and brand logos belong to their respective owners and are shown only to indicate the tools I work with. Logo sources: [Devicon](https://devicon.dev/), [Simple Icons](https://simpleicons.org/) and [selfh.st/icons](https://selfh.st/icons/) (Microsoft Copilot).
+Tool and brand logos belong to their respective owners and are shown only to indicate the tools I work with. Logo sources: [Devicon](https://devicon.dev/), [Simple Icons](https://simpleicons.org/) and [selfh.st/icons](https://selfh.st/icons/) (Microsoft Copilot). The Google Workspace and Excel logos are simple SVGs written for this site.
 
 ## License
 
