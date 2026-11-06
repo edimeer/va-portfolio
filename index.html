@@ -41,7 +41,7 @@
       <ul class="hidden items-center gap-7 text-sm font-medium md:flex">
         <li><a class="hover:text-brand-600" href="#about">About</a></li>
         <li><a class="hover:text-brand-600" href="#services">Services</a></li>
-        <!-- <li><a class="hover:text-brand-600" href="#work">Samples</a></li> -->
+        <li><a class="hover:text-brand-600" href="#work">Samples</a></li>
                 <li><a class="hover:text-brand-600" href="#background">Background</a></li>
         <li><a class="hover:text-brand-600" href="#faq">FAQ</a></li>
         <li><button type="button" data-theme-toggle class="rounded-lg p-2 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Toggle dark mode">
@@ -63,7 +63,7 @@
     <ul id="mobile-menu" class="hidden space-y-1 border-t border-slate-200 px-4 py-3 text-sm font-medium dark:border-slate-800 md:hidden">
       <li><a class="block rounded-lg px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800" href="#about">About</a></li>
       <li><a class="block rounded-lg px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800" href="#services">Services</a></li>
-      <!-- <li><a class="block rounded-lg px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800" href="#work">Samples</a></li> -->
+      <li><a class="block rounded-lg px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800" href="#work">Samples</a></li>
             <li><a class="block rounded-lg px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800" href="#background">Background</a></li>
       <li><a class="block rounded-lg px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800" href="#faq">FAQ</a></li>
       <li><a class="block rounded-lg px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800" href="#contact">Get in touch</a></li>
@@ -319,63 +319,34 @@
       </div>
     </section>
 
-    <!-- Work samples
-         TODO: these are placeholders. Replace each card's text with a real project
-         (one you've done for yourself, a friend's business or a volunteer client),
-         add a screenshot or Loom link, and remove the "In progress" badges.
-         Don't deploy this section until at least one card is real. -->
-    <!-- Hidden until real projects are ready: remove the "hidden" attribute (and restore the nav links) to show it. -->
-    <section id="work" class="py-20 sm:py-28" hidden>
+    <!-- Work samples -->
+    <section id="work" class="py-20 sm:py-28">
       <div class="mx-auto max-w-6xl px-4 sm:px-6">
         <div class="reveal max-w-2xl">
           <span class="eyebrow">Work samples</span>
           <h2 class="section-title">See how I work</h2>
-          <p class="mt-3">Short write-ups of real setups: what the problem was, what I built and what changed.</p>
+          <p class="mt-3">Two small apps I built from scratch, with AI coding tools helping and me making the decisions. Watch the short walkthrough or open the live version.</p>
         </div>
         <div class="mt-12 grid gap-6 md:grid-cols-2">
           <article class="card card-hover reveal flex flex-col">
-            <!-- TODO: GoHighLevel sample. Rewrite Problem and Built so they match what you actually
-                 built (use a demo sub-account or your own funnel if you have no client project),
-                 add a screenshot or Loom, fill in the Result and remove the "In progress" badge. -->
-            <div class="flex aspect-video items-center justify-center rounded-xl border border-dashed border-sky-300 bg-sky-50 text-sm font-medium text-sky-700 dark:border-sky-800 dark:bg-slate-800 dark:text-sky-300">Screenshot or Loom video</div>
-            <div class="mt-5 flex items-center gap-2"><span class="chip">GoHighLevel</span><span class="chip">Zapier</span><span class="rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-800 dark:bg-amber-900/50 dark:text-amber-300">In progress</span></div>
-            <h3 class="mt-3 text-lg font-bold text-slate-900 dark:text-white">GoHighLevel funnel with automated follow-up</h3>
+            <video class="aspect-video w-full rounded-xl bg-slate-900 object-cover" controls preload="metadata" muted playsinline aria-label="PureCart walkthrough"><source src="assets/purecart.mp4" type="video/mp4"></video>
+            <div class="mt-5 flex flex-wrap items-center gap-2"><span class="chip">React</span><span class="chip">Vite</span><span class="chip">Tailwind CSS</span></div>
+            <h3 class="mt-3 text-lg font-bold text-slate-900 dark:text-white"><a href="https://edimeer.github.io/purecart/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-600 hover:underline">PureCart &rarr;</a></h3>
             <dl class="mt-3 space-y-2 text-sm">
-              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Problem: </dt><dd class="inline">Leads filled in a form, then waited days for a reply, and the pipeline lived in a spreadsheet.</dd></div>
-              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Built: </dt><dd class="inline">Landing page and form &rarr; contact and pipeline stage &rarr; text and email follow-up sequence &rarr; booking calendar with reminders.</dd></div>
-              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Result: </dt><dd class="inline">[X] leads handled with no manual work; first reply within [Y] minutes.</dd></div>
+              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Built: </dt><dd class="inline">An online store demo with a product catalog (filter and sort), a cart drawer with add, remove and quantity changes, and a checkout flow with an order summary.</dd></div>
+              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Why: </dt><dd class="inline">Shows I can take a store idea from a blank page to a working, mobile-friendly demo.</dd></div>
             </dl>
+            <a href="https://edimeer.github.io/purecart/" target="_blank" rel="noopener noreferrer" class="mt-4 text-sm font-semibold text-brand-600 hover:underline">Open the live app &rarr;</a>
           </article>
           <article class="card card-hover reveal flex flex-col [transition-delay:100ms]">
-            <!-- TODO: swap for a screenshot: <img src="assets/work/lead-capture.png" alt="..." class="aspect-video w-full rounded-xl object-cover"> -->
-            <div class="flex aspect-video items-center justify-center rounded-xl border border-dashed border-violet-300 bg-violet-50 text-sm font-medium text-violet-600 dark:border-violet-800 dark:bg-slate-800 dark:text-violet-300">Screenshot or Loom video</div>
-            <div class="mt-5 flex items-center gap-2"><span class="chip">Zapier</span><span class="chip">Google Sheets</span><span class="rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-800 dark:bg-amber-900/50 dark:text-amber-300">In progress</span></div>
-            <h3 class="mt-3 text-lg font-bold text-slate-900 dark:text-white">Lead capture that runs itself</h3>
+            <video class="aspect-video w-full rounded-xl bg-slate-900 object-cover" controls preload="metadata" muted playsinline aria-label="Tallybook walkthrough"><source src="assets/tallybook.mp4" type="video/mp4"></video>
+            <div class="mt-5 flex flex-wrap items-center gap-2"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Vite</span></div>
+            <h3 class="mt-3 text-lg font-bold text-slate-900 dark:text-white"><a href="https://edimeer.github.io/tallybook/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-600 hover:underline">Tallybook &rarr;</a></h3>
             <dl class="mt-3 space-y-2 text-sm">
-              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Problem: </dt><dd class="inline">Web form leads were copied into a spreadsheet by hand and followed up late.</dd></div>
-              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Built: </dt><dd class="inline">Form &rarr; Sheet &rarr; Slack alert &rarr; auto-reply email, with no copy-paste.</dd></div>
-              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Result: </dt><dd class="inline">[X] hours saved a week; every lead answered within [Y] minutes.</dd></div>
+              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Built: </dt><dd class="inline">A personal finance dashboard with a monthly overview, spending breakdown chart, planned vs actual budgets, and a searchable list of transactions you can add, edit and delete. Data stays in your browser.</dd></div>
+              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Why: </dt><dd class="inline">Shows I can turn messy numbers into a clear dashboard that is easy to read and keep up to date.</dd></div>
             </dl>
-          </article>
-          <article class="card card-hover reveal flex flex-col [transition-delay:100ms]">
-            <div class="flex aspect-video items-center justify-center rounded-xl border border-dashed border-emerald-300 bg-emerald-50 text-sm font-medium text-emerald-700 dark:border-emerald-800 dark:bg-slate-800 dark:text-emerald-300">Screenshot or Loom video</div>
-            <div class="mt-5 flex items-center gap-2"><span class="chip">Notion</span><span class="chip">Gmail</span><span class="rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-800 dark:bg-amber-900/50 dark:text-amber-300">In progress</span></div>
-            <h3 class="mt-3 text-lg font-bold text-slate-900 dark:text-white">Inbox and task system reset</h3>
-            <dl class="mt-3 space-y-2 text-sm">
-              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Problem: </dt><dd class="inline">A crowded inbox, with tasks living in emails and sticky notes.</dd></div>
-              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Built: </dt><dd class="inline">Labels and filters, reply templates, and a Notion board for every open task.</dd></div>
-              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Result: </dt><dd class="inline">Inbox from [X] to [Y] unread; a daily 10-minute review instead of an hour.</dd></div>
-            </dl>
-          </article>
-          <article class="card card-hover reveal flex flex-col [transition-delay:200ms]">
-            <div class="flex aspect-video items-center justify-center rounded-xl border border-dashed border-brand-200 bg-brand-50 text-sm font-medium text-brand-700 dark:border-brand-700 dark:bg-slate-800 dark:text-brand-200">Screenshot or Loom video</div>
-            <div class="mt-5 flex items-center gap-2"><span class="chip">ChatGPT</span><span class="chip">Google Docs</span><span class="rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-800 dark:bg-amber-900/50 dark:text-amber-300">In progress</span></div>
-            <h3 class="mt-3 text-lg font-bold text-slate-900 dark:text-white">SOP library with AI drafting</h3>
-            <dl class="mt-3 space-y-2 text-sm">
-              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Problem: </dt><dd class="inline">How-to knowledge lived in one person's head, so onboarding was slow.</dd></div>
-              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Built: </dt><dd class="inline">Recorded walkthroughs turned into step-by-step SOPs with AI, then checked by me.</dd></div>
-              <div><dt class="inline font-semibold text-slate-900 dark:text-white">Result: </dt><dd class="inline">[X] SOPs written; a new hire was set up in [Y] days.</dd></div>
-            </dl>
+            <a href="https://edimeer.github.io/tallybook/" target="_blank" rel="noopener noreferrer" class="mt-4 text-sm font-semibold text-brand-600 hover:underline">Open the live app &rarr;</a>
           </article>
         </div>
       </div>
