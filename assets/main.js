@@ -1,4 +1,4 @@
-// Dark mode toggle (persists choice; defaults to system preference)
+// Dark mode toggle (persists choice; dark by default)
 document.querySelectorAll("[data-theme-toggle]").forEach((b) =>
   b.addEventListener("click", () => {
     const dark = document.documentElement.classList.toggle("dark");
